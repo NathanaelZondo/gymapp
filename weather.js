@@ -88,15 +88,15 @@ textAlign:'center'}}>
       
 
         <View style ={{flexDirection:"row"}}>
-        <Text style ={styling.humidity}>Humidity {weatherData.main.humidity }</Text>
+        {/* <Text style ={styling.humidity}>Humidity {weatherData.main.humidity }</Text> */}
         {/* <Text style ={styling.humidity}>{weatherData.weather[0].description}</Text> */}
         </View>
         
       
-        <View style ={{flexDirection:"row"}}>
-         <Text style ={styling.humidity}>Feels {weatherData.main.feels_like} °С</Text>
-        <Text style ={styling.humidity}>Min {weatherData.main.temp_min} °С</Text>
-        <Text style ={styling.humidity}>Max {weatherData.main.temp_max} °С</Text></View>
+        <View style ={{flexDirection:"column"}}>
+         <Text style ={styling.humidity}>  Feels          {weatherData.main.feels_like} °С  </Text>
+        <Text style ={styling.humidity}>   Min            {weatherData.main.temp_min} °С    </Text>
+        <Text style ={styling.humidity}>   Max            {weatherData.main.temp_max} °С    </Text></View>
 
 {/* <Text style ={{padding:10}}>.</Text>
         <View style ={{flexDirection:"row"}}>
@@ -135,9 +135,14 @@ fontSize:20,
 marginLeft:0,
 marginBottom:2,
 paddingLeft:4,
+textAlign:'center',
 borderColor:'white',
 borderStyle:'solid',
-borderWidth:2
+borderWidth:0.5,
+borderBottomColor:'white',
+borderTopColor:'rgba(0,0,0,0)',
+borderLeftColor:'rgba(0,0,0,0)',
+borderRightColor:'rgba(0,0,0,0)'
 
 
 },

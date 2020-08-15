@@ -61,7 +61,7 @@ style={styles.image}>
         <Text style ={{fontSize:30,color:'white',marginBottom:40}}>Log in to Gymo</Text>          
       </View>
 
-            <View style ={{shadowColor:'black',borderWidth:0,borderStyle:'solid',borderColor:'white',backgroundColor:'rgba(0,0,0,0.7)',height:350,paddingTop:40,paddingBottom:1}}>
+            <View style ={{shadowColor:'black',borderWidth: 0,borderStyle:'solid',borderColor:'white',backgroundColor:'rgba(0,0,0,0.7)',height:350,paddingTop:40,paddingBottom:1}}>
 
     <Text style ={{color:'red',textAlign:'center'}}>{this.state.error}</Text>
     <TextInput underlineColorAndroid={'white'}  selectionColor={'#660000'} keyboardType="email-address" type ="email"    onChange={this.handleChange} placeholder="Enter your email address" style ={{fontSize:17,lineHeight:40,height:50,marginBottom:20,paddingLeft:10,color:'white'}}></TextInput>

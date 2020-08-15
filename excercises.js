@@ -121,7 +121,7 @@ componentDidMount() {
 style={{resizeMode:"cover",flex:1}}>
       <LinearGradient
 
-colors={['rgba(0,0,0,01)', 'rgba(0,0,0,0.7)', 'rgba(0,0,0,0.7)']}
+colors={['rgba(0,0,0,1)', 'rgba(0,0,0,0.5)', 'rgba(0,0,0,0.5)']}
 style={{ flex:1 }}>
 
   
@@ -158,7 +158,7 @@ this.props.navigation.navigate('Timer', { chosenExcercise: [item.title, item.des
 
   }}>
     <View style ={{flexDirection:'row',alignItems:"flex-start"}}>
-      <View style ={{  borderStyle:'solid',borderWidth:1,borderColor:"white",margin:5}}>
+      <View style ={{  borderStyle:'solid',borderWidth:0,borderColor:"white",margin:5}}>
        <Image
         style={styles.tinyLogo}
         source={item.img}
@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
 card:{
   height: 112,
 marginVertical:10,
-  borderStyle:'solid',borderWidth:1,borderColor:"white",
+  borderStyle:'solid',borderWidth:0,borderColor:"white",backgroundColor:'rgba(0,0,0,0.7)',
   width:355
 }
 ,  pic: {
